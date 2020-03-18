@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+		<link rel="stylesheet" href="https://assets.onfido.com/web-sdk-releases/5.7.1/style.css">
+		<script src="https://assets.onfido.com/web-sdk-releases/5.7.1/onfido.min.js"></script>
+	</head>
+
+
+	<body>
+		<iframe width="100%" height="800px" src="https://jsfiddle.net/g7rfas65/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+	</body>
+
+	<!-- <style type="text/css">
+		html,
+		body {
+		  height: 100%;
+		  margin: 0;
+		}
+
+		body,
+		button {
+		  -webkit-font-smoothing: antialiased;
+		}
+
+		@media (min-width: 30em) {
+		  #onfido-mount {
+		    position: relative;
+		    top: 10%;
+		  }
+		}
+	</style>
+
+	<script type="text/javascript">
+		var url = "https://token-factory.onfido.com/sdk_token"
+		var request = new XMLHttpRequest()
+		request.open('GET', url, true)
+		request.onload = function() {
+		  if (request.status >= 200 && request.status < 400) {
+		    var data = JSON.parse(request.responseText)
+
+		    Onfido.init({
+		      useModal: false,
+		      token: data.message,
+		      onComplete: function(data) {
+		        // callback for when everything is complete
+		        console.log("everything is complete")
+		      },
+		      steps: [
+		      	{
+		          type: 'welcome',
+		          options: {
+		            title: 'Verify your identity',
+		            descriptions: 'T'
+		          }
+		        },
+		        'document',
+		        'face',
+		        'complete'
+		      ]
+		    });
+		  }
+		}
+		request.send()
+
+	</script> -->
+</html>
